@@ -23,7 +23,7 @@ endTime = intTime + datetime.timedelta(seconds=getCount)
 while(1):
     os.system('clear')
     delta = endTime - datetime.datetime.now()
-    print("hours: "+ str(getHour) + " mins: " + str(getMins) + " seconds: " + str(delta.seconds))
+    print("Temps restant: "+ str(getHour) + ":" + str(getMins) + ":" + str(delta.seconds))
     if (delta.seconds <= 0):
         print("TEMPS ÉCOULÉ !\n")
         break
